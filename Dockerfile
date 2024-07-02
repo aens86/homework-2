@@ -1,6 +1,6 @@
 FROM tomcat:9.0.90-jdk21-temurin-jammy
 RUN apt update 
-RUN apt install default-jdk maven git -y
+RUN apt install maven git -y
 WORKDIR /home/usr/   
 RUN git clone https://github.com/boxfuse/boxfuse-sample-java-war-hello.git /usr/local/war
 RUN cd  /usr/local/war ; mvn package 
