@@ -1,4 +1,4 @@
-FROM  tomcat:11.0.0-M21-jdk21-temurin-jammy
+FROM  tomcat:9.0
 RUN apt update 
 RUN apt install maven git -y
 WORKDIR /home/usr/   
